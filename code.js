@@ -74,5 +74,9 @@ function timer()
     $(function () {
         updateOtp();
         
+        $('#secret').keyup(function () {
+            updateOtp();
+        });
+        
         setInterval(timer, 1000);
     });
